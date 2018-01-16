@@ -32,3 +32,15 @@ by code that does what the pseudo-code suggests.
         # Return the result from the previous loop:
         
         return 'XXX'
+
+        li = len(additional_contents) + 5
+        lf = self.volume
+        str = 'Hello' + additional_contents
+        s = ''
+        t = ''
+        for k in range(lf, li - 1):
+            s += str[k]
+        for k in range(lf):
+            t += str[k]
+        self.contents = t
+        return s
